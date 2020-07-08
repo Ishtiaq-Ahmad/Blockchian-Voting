@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>D-Vote (Vote Caste)</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="parallax">
+    <div class="container" style="width: 850px;">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h1 class="bg-text" style="  font-size: 50px; margin-top: 5rem;">Vote Your Candidate</h1>
+                <br/>
+                <div class="pe">
+                    <div class="wrap-cards">
+                        <div class="card">
+                            <div class="wrap-image"><img class="round-image" src="images/IK.jpg" alt="Imran Khan" />
+                                <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <polygon points="0,100 100,100 100,0"></polygon> -->
+                                </svg>
+                            </div>
+                            <div class="contents">
+                                <div class="p-name">Imran Khan</div>
+                                <div class="p-des">PTI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pe">
+                    <div class="wrap-cards">
+                        <div class="card">
+                            <div class="wrap-image"><img class="round-image" src="images/NS.jpg" alt="Nawaz Shreef" />
+                                <!-- <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+                                    <polygon points="0,100 100,100 100,0"></polygon> -->
+                                </svg>
+                            </div>
+                            <div class="contents">
+                                <div class="p-name">Nawaz Shreef</div>
+                                <div class="p-des">PMLN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <hr> -->
+                <br>
+                <div id="loader">
+                    <p class="text-center">Loading...</p>
+                </div>
+                <div id="content" style="display: none;">
+                    <!-- <table class="table">
+                         <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Votes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="candidatesResults">
+                        </tbody>
+                    </table>
+                    <hr/> -->
+
+                    <form onSubmit="App.castVote(); return false;">
+
+                        <div class="form-group">
+                            <label style="color: #fff;font-size: 30px; font-weight: 300;margin-bottom: 0px; margin-top: 4rem; margin-left: 4rem;" for="candidatesSelect">Select Candidate:</label>
+                            <select class="form-control" id="candidatesSelect"></select>
+                            <button style="font-size:70px; margin-top: 3rem; margin-left: 0px;margin-right:0px ; width: 73.8rem;height: 16.5rem;" type="submit" class="btn-orng">Vote</button>
+                            <!-- <hr /> -->
+                        </div>
+
+                        <!-- <button type="submit" class="vote_btn">Vote</button> -->
+                    </form>
+                    <p style="font-size:20px ; margin-top: 0px;" class="bg-text" id="accountAddress" class="text-center"></p>
+                </div>
+            </div>
+        </div>
+        <button style="font-size:50px; margin-left:4rem; margin-top: 10rem; width: 90%;" class="btn-orng " onclick="window.location.href='result.html' ; ">Show result</button>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js "></script>
+        <script src="js/web3.min.js "></script>
+        <script src="js/truffle-contract.js "></script>
+        <script src="js/app.js "></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>D-Vote (Election Results)</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="parallax">
+    <div class="container" style="width: 650px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="bg-text" style=" margin-top: 30%; font-size: 50px; margin-top: 5rem;">Election Results</h1>
+                <table id="myTable" class="bg-text table" style="margin-top: 60%; background:#252D3F;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="candidatesResults">
+                    </tbody>
+                </table>
+                <script>
+                    var v_count1 = document.getElementById("myTable").rows[1].column[2].value();
+                    var v_count2 = document.getElementById("myTable").rows[2].column[2].value();
+
+                    console.log()
+                    if (v_count1 > v_count2) {
+                        console.log("candidate 1 won");
+                    } else {
+                        console.log("candidate 2 won");
+                    }
+                </script>
+                <br/>
+                <p style="font-size:20px ; margin-top: 100%;" class="bg-text" id="accountAddress" class="text-center"></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

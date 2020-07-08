@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>D-Vote (Landing Page)</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="body">
+
+    <div style="background:#F9F8F6;float: left; width: 50%; height: 100vh;">
+        <div class="text-box-lft">
+            <img class="logo" src="images/logo.png" alt="logo">
+        </div>
+    </div>
+
+    <div style="background-color:#252D3F;float: none;overflow: hidden; height: 100vh;">
+        <h1 class="heading-primary">
+            <div class="text-box">
+                <h1 style="font-size: 100px; font-weight: 100; margin-bottom: 0px;">D-Vote</h1>
+                <h2 style="margin-left: 1rem;margin-top: 0px; font-weight: 200; font-size: 30px; margin-bottom: 8rem; text-transform: none; ">A Decentralized Ethereum-Based <br> Polling Application</h2>
+                <a class="btn-vote" href="index2.html">Vote</a>
+                <br>
+            </div>
+            <div class="text-box-bottom" style="background-color: #475C7A;">
+                <h1 style="color:#fff;padding-top: 2rem;padding-bottom: 2rem; font-weight: 100;position: absolute; margin-left: 19%; text-transform: none;">How it works !</h1>
+                <div class="btn-container-wrapper p-relative d-block  zindex-1">
+                    <a style="position: absolute; margin-left: -2.5%; margin-top: 5rem; color: #fff;" class="    mt-md-3 mb-4 scroll align-self-center text-light" onclick="window.scrollBy(0, 1000);">
+                        <i class="fa fa-angle-down fa-3x text-light"></i>
+                    </a>
+                </div>
+            </div>
+        </h1>
+    </div>
+
+    <div class="main">
+        <ul class="process ">
+            <li class="process__item ">
+                <span class="process__number ">1</span>
+                <span class="process__title ">Initiating Vote</span>
+                <span class="process__subtitle ">D-App and Smart Contract will be deployed by Election Commission on Blockchain Network</span>
+            </li>
+
+            <li class="process__item ">
+                <span class="process__number ">2</span>
+                <span class="process__title ">Visit D-App</span>
+                <span class="process__subtitle ">Voter will open D-Vote Web App in Browser </span>
+            </li>
+            <li class="process__item ">
+                <span class="process__number ">3</span>
+                <span class="process__title ">Wallet Login</span>
+                <span class="process__subtitle ">Voter will login to a Crypto-Wallet</span>
+            </li>
+
+            <li style="margin-right: 0px; " class="process__item ">
+                <span class="process__number ">4</span>
+                <span class="process__title ">Vote Request</span>
+                <span class="process__subtitle ">The vote transaction will be done and 0.001 Ether Will be deducted from Voter's Wallet</span>
+            </li>
+        </ul>
+        <ul class="process ">
+            <li style="margin-right: 0px; " class="process__item ">
+                <span class="process__number ">5</span>
+                <span class="process__title ">Vote authentication</span>
+                <span class="process__subtitle ">Votes are Authenticated,Encrypted and Added to Blockchain</span>
+            </li>
+            <li style="margin-right: 0px; " class="process__item ">
+                <span class="process__number ">6</span>
+                <span class="process__title ">Voter anonymization</span>
+                <span class="process__subtitle ">Voters are Anonymization through a shuffling-based encryption process</span>
+            </li>
+            <li style="margin-right: 0px; " class="process__item ">
+                <span class="process__number ">7</span>
+                <span class="process__title ">Voting Times Up</span>
+                <span class="process__subtitle ">After alloted time from Election Commission Votes will no longer be recorded</span>
+            </li>
+            <li style="margin-right: 0px; " class="process__item ">
+                <span class="process__number ">8</span>
+                <span class="process__title ">Result time</span>
+                <span class="process__subtitle ">Final results scores can be viewed</span>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    function scrollWin(x, y) {
+        window.scrollBy(x, y);
+    }
+</script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+</html>
